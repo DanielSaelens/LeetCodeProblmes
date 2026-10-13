@@ -18,7 +18,7 @@ def ransomNote(ransomNote: str, magazine: str) -> bool:
     for k, value in my_dict.items():
         if my_dict2.get(k, 0) < value:
             return False
-        
+
     return True
 
 

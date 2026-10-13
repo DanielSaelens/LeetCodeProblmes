@@ -16,7 +16,7 @@ def validAnagram(s: str, t: str) -> bool:
 
     if my_dict == my_dict2:
         return True
-    
+
     return False
 
 
@@ -24,5 +24,3 @@ if __name__ == "__main__":
     a = "silent"
     b = "listen"
     print(validAnagram(a, b))
-        
-        
