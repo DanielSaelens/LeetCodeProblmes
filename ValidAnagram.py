@@ -1,3 +1,6 @@
+from collections import Counter
+
+
 def validAnagram(s: str, t: str) -> bool:
     my_dict = {}
     my_dict2 = {}
@@ -5,6 +8,7 @@ def validAnagram(s: str, t: str) -> bool:
     for i in s:
         if i in my_dict:
             my_dict[i] += 1
+
         else:
             my_dict[i] = 1
 
@@ -20,7 +24,15 @@ def validAnagram(s: str, t: str) -> bool:
     return False
 
 
+def validA(s: str, t: str) -> bool:
+    counterS = Counter(s)
+    counterT = Counter(t)
+
+    return counterS == counterT
+
+
 if __name__ == "__main__":
     a = "silent"
     b = "listen"
     print(validAnagram(a, b))
+    print(validA(a, b))
