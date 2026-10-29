@@ -13,4 +13,5 @@ def lengthOfLongestSubstring(s: str) -> int:
 # 2. If we do, we have to figure out which one to discard and which to keep.
 # 3. We found two letters, we need to decide if the left side is longer, or the right side
 # 4. How we do that? TBA
-# 5. Maybe can do two variable's that has left side and the right side, and compare the two. 
+# 5. Maybe can do two variable's that has left side and the right side, and compare the two.
+# 6. Maybe a set for finding out the repeating characters.
