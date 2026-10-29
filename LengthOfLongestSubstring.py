@@ -15,3 +15,5 @@ def lengthOfLongestSubstring(s: str) -> int:
 # 4. How we do that? TBA
 # 5. Maybe can do two variable's that has left side and the right side, and compare the two.
 # 6. Maybe a set for finding out the repeating characters.
+# 7. s[:i], s[i + 1:] how to check left and right
+# 8. Need a way to check for duplicates still.
