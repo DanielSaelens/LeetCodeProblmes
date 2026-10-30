@@ -6,7 +6,19 @@ def lengthOfLongestSubstring(s: str) -> int:
     for i in range(string_length):
         if s[i] not in stack_letter:
             stack_letter.append(s[i])
-            counter += 1
+        elif s[i] in stack_letter:
+            position = stack_letter.index(s[i])
+            stack_letter = stack_letter[position + 1:]
+            stack_letter.append(s[i])
+        counter = max(counter, len(stack_letter))
+
+    return counter
+
+
+if __name__ == "__main__":
+    print(lengthOfLongestSubstring("pwwkew"))
+    print(lengthOfLongestSubstring("S"))
+
 
 # Need to find a way so the substring, and no repeats are kept.
 # 1. We need a way to handle we found two of the same letters.
