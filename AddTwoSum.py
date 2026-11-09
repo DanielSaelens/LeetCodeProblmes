@@ -49,7 +49,7 @@ def build_linked_list(values: list[int]) -> ListNode | None:
     return head
 
 
-def to_list(head: ListNode | None) -> list[int]:
+def getValues(head: ListNode | None) -> list[int]:
     values = []
     current = head
     while current is not None:
@@ -62,4 +62,4 @@ if __name__ == "__main__":
     l1 = build_linked_list([9, 9, 9, 9, 9, 9, 9])
     l2 = build_linked_list([9, 9, 9, 9])
     result = addTwoSum(l1, l2)
-    print(to_list(result))  
+    print(getValues(result))
